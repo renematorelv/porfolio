@@ -1,7 +1,6 @@
 {
   "Header": {
-    "title": "Rene Matorel",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Rene Matorel"
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -159,26 +158,66 @@
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
-  "Features": [
+  "Skills": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "https://w7.pngwing.com/pngs/186/205/png-transparent-react-native-react-logos-brands-icon.png",
+      "title": "REACT JS",
+      "text": "Con habilidades sólidas en el desarrollo web, destaco como un programador experto en React, creando experiencias digitales innovadoras y funcionales."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968238.png",
+      "title": "JAVASCRIPT",
+      "text": "Como programador de JavaScript, estoy enfocado en crear soluciones web eficientes y escalables para ofrecer experiencias de usuario excepcionales."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "https://e7.pngegg.com/pngimages/889/394/png-clipart-the-daily-dot-internet-online-newspaper-reddit-others-text-logo.png",
+      "title": "CSS",
+      "text": "Como desarrollador con experiencia en JavaScript y CSS, me dedico a crear soluciones web elegantes y funcionales, asegurando una presentación visualmente atractiva y una experiencia de usuario agradable."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "https://e7.pngegg.com/pngimages/837/140/png-clipart-html-5-logo-html5-grey-black-icons-logos-emojis-tech-companies.png",
+      "title": "HTML",
+      "text": "Como desarrollador con enfoque en HTML, me especializo en construir bases sólidas para aplicaciones web, asegurando una estructura semántica y accesible para una experiencia de usuario efectiva."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968326.png",
+      "title": "TYPESCRIPT",
+      "text": "Como desarrollador con experiencia en TypeScript, construyo aplicaciones robustas con un código más seguro y mantenible, elevando la calidad y confiabilidad del desarrollo web."
+    }, 
+    {
+      "icon": "https://w7.pngwing.com/pngs/751/989/png-transparent-bootstrap-brands-icon.png",
+      "title": "BOOTSTRAP",
+      "text": "Con habilidades especializadas en Bootstrap, transformo conceptos en interfaces elegantes y receptivas, proporcionando experiencias web modernas y visualmente atractivas."
+    },
+    {
+      "icon": "https://cdn.icon-icons.com/icons2/2389/PNG/512/vue_js_logo_icon_144749.png",
+      "title": "VUE.JS",
+      "text": "Con destreza en Vue.js, transformo ideas en aplicaciones web dinámicas y eficientes, ofreciendo experiencias interactivas y fluidas para los usuarios."
+    },
+    {
+      "icon": "https://cdn.icon-icons.com/icons2/2148/PNG/512/tailwind_icon_131947.png",
+      "title": "TAILWIND",
+      "text": "Capacidad en Tailwind CSS, diseños webs estilizadas y eficientes, aprovechando la versatilidad de Tailwind para crear experiencias visuales atractivas y funcionales."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/256/25/25231.png",
+      "title": "GIT AND GITHUB",
+      "text": "Como profesional con experiencia en Git y GitHub, gestiono el control de versiones y colaboración en proyectos, asegurando un flujo de trabajo y código fuente."
+    }, 
+    {
+      "icon": "https://iconape.com/wp-content/png_logo_vector/cib-postman.png",
+      "title": "POSTMAN",
+      "text": "Experto en Postman para pruebas de APIs, perfecciono la calidad del software al garantizar una exhaustiva validación de las API, asegurando la confiabilidad y eficiencia de las aplicaciones."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/5266/5266248.png",
+      "title": "DEVOPS",
+      "text": "Como profesional de DevOps, especializado en Continuous Integration (CI) y Continuous Deployment (CD), automatizo y optimizo los flujos de trabajo de desarrollo, garantizando entregas eficientes y confiables de software."
+    },
+    {
+      "icon": "https://images.vexels.com/media/users/3/195032/isolated/preview/5c8f453f712deaccf64d803b6578abd6-escuela-de-icono-plano-de-lupa.png",
+      "title": "IN SEARCH OF GREATER LEARNING",
+      "text": "En busca de mas conocimiento constante."
     }
   ]
 }
