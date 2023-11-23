@@ -11,7 +11,7 @@ export const Skills = (props) => {
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className="col-xs-6 col-sm-6 col-md-4 col-lg-3" style={{marginBottom: "1em"}}>
-                  <img className={""} src={d.icon} style={{height:"3em"}} alt="logo"></img>
+                  <img className={""} src={d.icon} style={{height:"4em"}} alt="logo"></img>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
                 </div>
