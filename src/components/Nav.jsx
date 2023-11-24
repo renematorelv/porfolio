@@ -1,10 +1,14 @@
 import React from "react";
+import logo from "../img/Rolf_Logo.png"
 
 export const Nav = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
+          <a href="#page-top">
+            <img src={logo} className="img-logoNav" alt="logo" />
+          </a>
           <button
             type="button"
             className="navbar-toggle collapsed"

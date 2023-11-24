@@ -235,6 +235,14 @@ a:focus,
   outline-offset: none;
 }
 
+.img-logoNav {
+  display: inline;
+  width: 40px !important;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+
 /* Header Section */
 .intro {
   display: table;
@@ -317,7 +325,7 @@ header .intro-text {
 
 /* AboutMe Section */
 #aboutMe {
-  padding: 100px 0;
+  padding: 2em 0;
 }
 
 #aboutMe h3 {
@@ -359,7 +367,16 @@ header .intro-text {
 
 #aboutMe img {
   width: 520px;
-  margin-top: 10px;
+  margin-top: 1em;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+
+.img-logo {
+  width: 100px !important;
+  margin-top: 5em !important;
+  float: right;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
