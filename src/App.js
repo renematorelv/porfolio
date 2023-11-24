@@ -5,6 +5,7 @@ import JsonData from "./data/data.json";
 import { useState, useEffect } from 'react';
 import { Skills } from './components/Skills';
 import { AboutMe } from './components/AboutMe';
+import { Contact } from './components/Contact';
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -18,6 +19,7 @@ const App = () => {
       <Header data={landingPageData.Header}/>
       <Skills data={landingPageData.Skills}/>
       <AboutMe data={landingPageData.AboutMe}/>
+      <Contact data={landingPageData.Contact}/>
     </div>
   );
 }
