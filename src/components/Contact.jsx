@@ -31,7 +31,7 @@ export const Contact = (props) => {
           clearForm();
           Swal.fire({
             icon: 'success',
-            title: 'Product added successfully',
+            title: 'Email sent correctly',
           });
         },
         (error) => {
