@@ -1,36 +1,49 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import Swal from 'sweetalert2';
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [formData, setFormData] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
+
+  const clearForm = () => {
+    setFormData({ initialState });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(formData.name, formData.email, formData.message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("service_renedwhval", "template_g74csvk", e.target, "y-HqnzXattLojA8_M")
       .then(
         (result) => {
-          console.log(result.text);
-          clearState();
+          clearForm();
+          Swal.fire({
+            icon: 'success',
+            title: 'Product added successfully',
+          });
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
+  useEffect(() => {
+    clearForm();
+  }, [formData]);
+
   return (
     <div>
       <div id="contact">
@@ -44,7 +57,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -144,10 +157,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2023 Rene Alejandro Matorel Vega
           </p>
         </div>
       </div>
