@@ -1,7 +1,9 @@
-import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 import Swal from 'sweetalert2';
+import { useEffect, useState} from 'react';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
 
 const initialState = {
   name: "",
@@ -11,6 +13,39 @@ const initialState = {
 
 export const Contact = (props) => {
   const [formData, setFormData] = useState(initialState);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const firebaseConfig = {
+        apiKey: process.env.REACT_APP_APIKEY,
+        authDomain: process.env.REACT_APP_authDomain,
+        projectId: process.env.REACT_APP_projectId,
+        storageBucket: process.env.REACT_APP_storageBucket,
+        messagingSenderId: process.env.REACT_APP_messagingSenderId,
+        appId: process.env.REACT_APP_appId,
+        measurementId: process.env.REACT_APP_measurementId
+      };
+
+      initializeApp(firebaseConfig);
+
+      const db = getFirestore();
+      const miColeccion = collection(db, 'info');
+      const consulta = await getDocs(miColeccion);
+      const datosArray = [];
+
+      consulta.forEach((doc) => {
+        datosArray.push({
+          id: doc.id,
+          ...doc.data(),
+        });
+      });
+
+      setData(Object.values(datosArray));
+    };
+
+    fetchData();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -111,7 +146,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {props.data ? props.data.address : "loading"}
+                {data[0] ? data.map((dataItem) => ( dataItem.address)): "Loading"}
               </p>
             </div>
             <div className="contact-item">
@@ -119,7 +154,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                {data[0] ? data.map((dataItem) => ( dataItem.phone)): "Loading"}
               </p>
             </div>
             <div className="contact-item">
@@ -127,10 +162,11 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                {data[0] ? data.map((dataItem) => ( dataItem.email)): "Loading"}
               </p>
             </div>
           </div>
+          {console.log(data)}
           <div className="col-md-12">
             <div className="row">
               <div className="social">
