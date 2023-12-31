@@ -1,5 +1,3 @@
-
-import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 import Swal from 'sweetalert2';
