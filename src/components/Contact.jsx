@@ -167,6 +167,7 @@ export const Contact = (props) => {
             </div>
           </div>
           {console.log(data)}
+          {console.log(process.env.REACT_APP_APIKEY)}
           <div className="col-md-12">
             <div className="row">
               <div className="social">
