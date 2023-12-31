@@ -1,3 +1,5 @@
+
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 import Swal from 'sweetalert2';
@@ -75,6 +77,9 @@ export const Contact = (props) => {
       );
   };
 
+  useEffect(() => {
+    clearForm();
+  }, [formData]);
 
   return (
     <div>
