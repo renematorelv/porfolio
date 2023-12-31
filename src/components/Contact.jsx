@@ -77,6 +77,7 @@ export const Contact = (props) => {
 
   return (
     <div>
+    {console.log(process.env.REACT_APP_API_KEY, "y", process.env.REACT_APP_API_KEY_PROD)}
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
