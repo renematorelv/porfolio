@@ -18,13 +18,13 @@ export const Contact = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       const firebaseConfig = {
-        apiKey: process.env.REACT_APP_API_KEY,
-        authDomain: process.env.REACT_APP_AUTHDOMAIN,
-        projectId: process.env.REACT_APP_PROJECTID,
-        storageBucket: process.env.REACT_APP_STORAGEBUCKET,
-        messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
-        appId: process.env.REACT_APP_APPID,
-        measurementId: process.env.REACT_APP_MEASUREMENTID
+        apiKey: process.env.REACT_APP_API_KEY_PROD,
+        authDomain: process.env.REACT_APP_AUTHDOMAIN_PROD,
+        projectId: process.env.REACT_APP_PROJECTID_PROD,
+        storageBucket: process.env.REACT_APP_STORAGEBUCKET_PROD,
+        messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID_PROD,
+        appId: process.env.REACT_APP_APPID_PROD,
+        measurementId: process.env.REACT_APP_MEASUREMENTID_PROD
       };
 
       initializeApp(firebaseConfig);
@@ -52,10 +52,6 @@ export const Contact = (props) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const clearForm = () => {
-    setFormData({ initialState });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData.name, formData.email, formData.message);
@@ -63,7 +59,6 @@ export const Contact = (props) => {
       .sendForm("service_renedwhval", "template_g74csvk", e.target, "y-HqnzXattLojA8_M")
       .then(
         (result) => {
-          clearForm();
           Swal.fire({
             icon: 'success',
             title: 'Email sent correctly',
@@ -77,7 +72,6 @@ export const Contact = (props) => {
 
   return (
     <div>
-    {console.log(process.env.REACT_APP_API_KEY, "y", process.env.REACT_APP_API_KEY_PROD)}
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
