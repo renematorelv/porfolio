@@ -75,10 +75,6 @@ export const Contact = (props) => {
       );
   };
 
-  useEffect(() => {
-    clearForm();
-  }, [formData]);
-
   return (
     <div>
       <div id="contact">
@@ -169,8 +165,6 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-          {console.log(data)}
-          {console.log(process.env.REACT_APP_MEASUREMENTID_PROD)}
           <div className="col-md-12">
             <div className="row">
               <div className="social">
