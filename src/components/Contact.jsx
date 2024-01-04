@@ -140,15 +140,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {data[0] ? data.map((dataItem) => ( dataItem.address)): "Loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {data[0] ? data.map((dataItem) => ( dataItem.phone)): "Loading"}
+                {data[0] ? data.map((dataItem) => ( dataItem.address)): "Loading..."}
               </p>
             </div>
             <div className="contact-item">
@@ -156,7 +148,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                {data[0] ? data.map((dataItem) => ( dataItem.email)): "Loading"}
+                {data[0] ? data.map((dataItem) => ( dataItem.email)): "Loading..."}
               </p>
             </div>
           </div>
