@@ -3,7 +3,6 @@ import React from "react";
 import Swal from 'sweetalert2';
 import { useEffect, useState} from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
 
 export const Contact = (props) => {
   const [formData, setFormData] = useState({});
@@ -11,18 +10,6 @@ export const Contact = (props) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const firebaseConfig = {
-        apiKey: process.env.REACT_APP_API_KEY_PROD,
-        authDomain: process.env.REACT_APP_AUTHDOMAIN_PROD,
-        projectId: process.env.REACT_APP_PROJECTID_PROD,
-        storageBucket: process.env.REACT_APP_STORAGEBUCKET_PROD,
-        messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID_PROD,
-        appId: process.env.REACT_APP_APPID_PROD,
-        measurementId: process.env.REACT_APP_MEASUREMENTID_PROD
-      };
-
-      initializeApp(firebaseConfig);
-
       const db = getFirestore();
       const miColeccion = collection(db, 'info');
       const consulta = await getDocs(miColeccion);
