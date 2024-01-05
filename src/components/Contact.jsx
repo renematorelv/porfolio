@@ -5,14 +5,8 @@ import { useEffect, useState} from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
-
 export const Contact = (props) => {
-  const [formData, setFormData] = useState(initialState);
+  const [formData, setFormData] = useState({});
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -62,7 +56,8 @@ export const Contact = (props) => {
           Swal.fire({
             icon: 'success',
             title: 'Email sent correctly',
-          });
+          });  
+          setFormData({});
         },
         (error) => {
           console.log(error.text);
@@ -94,6 +89,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Name"
                         required
+                        value={formData.name ? formData.name : ''}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -108,6 +104,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Email"
                         required
+                        value={formData.email ? formData.email : ''}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -123,6 +120,7 @@ export const Contact = (props) => {
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    value={formData.message ? formData.message : ''}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
