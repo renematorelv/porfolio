@@ -47,10 +47,9 @@ export const Skills = () => {
         </div>
         <div className="row">
           {data[0] ? data.map((dataItem) => (
-            <div key={`${dataItem.titulo}`} className="col-xs-6 col-sm-6 col-md-4 col-lg-3" style={{marginBottom: "1em"}}>
+            <div key={`${dataItem.titulo}`} className="col-xs-6 col-sm-6 col-md-4 col-lg-3" style={{marginBottom: "4em"}}>
               <img className={""} src={dataItem.urlimg} style={{height:"4em"}} alt="logo"></img>
               <h3>{dataItem.titulo}</h3>
-              <p>{dataItem.descripcion}</p>
             </div>
           ))
           : <LoadingComponent/>}
