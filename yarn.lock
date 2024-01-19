@@ -5959,6 +5959,11 @@
     "filelist" "^1.0.1"
     "minimatch" "^3.0.4"
 
+"jekyll@^3.0.0-beta1":
+  "integrity" "sha512-aEochTAoY//2y10FPR+HDbEIdvPhH/uE94Umc8+fkS0EZUoRIbD7tTZ81QZa2/mk6qcMLzeM7lXjvOaLT6ALig=="
+  "resolved" "https://registry.npmjs.org/jekyll/-/jekyll-3.0.0-beta1.tgz"
+  "version" "3.0.0-beta1"
+
 "jest-changed-files@^27.5.1":
   "integrity" "sha512-buBLMiByfWGCoMsLLzGUUSpAmIAGnbR2KJoMN10ziLhOLvP4e0SlypHnAel8iqQXTrcbmfEY9sSqae5sgUsTvw=="
   "resolved" "https://registry.npmjs.org/jest-changed-files/-/jest-changed-files-27.5.1.tgz"
