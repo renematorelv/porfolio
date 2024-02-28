@@ -54,62 +54,62 @@
   },
   "Skills": [
     {
-      "icon": "https://w7.pngwing.com/pngs/186/205/png-transparent-react-native-react-logos-brands-icon.png",
+      "icon": "./img-icons/react.png",
       "title": "REACT JS",
       "text": "With solid skills in web development, I stand out as an expert React programmer, creating innovative and functional digital experiences."
     },
     {
-      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968238.png",
+      "icon": "./img-icons/javascript.png",
       "title": "JAVASCRIPT",
       "text": "As a JavaScript programmer, I am focused on creating efficient and scalable web solutions to deliver exceptional user experiences."
     },
     {
-      "icon": "https://e7.pngegg.com/pngimages/889/394/png-clipart-the-daily-dot-internet-online-newspaper-reddit-others-text-logo.png",
+      "icon": "./img-icons/css.png",
       "title": "CSS",
       "text": "Experienced developer proficient in JavaScript and CSS, dedicated to creating elegant and functional web solutions for a visually appealing and user-friendly experience."
     },
     {
-      "icon": "https://e7.pngegg.com/pngimages/837/140/png-clipart-html-5-logo-html5-grey-black-icons-logos-emojis-tech-companies.png",
+      "icon": "./img-icons/html.png",
       "title": "HTML",
       "text": "As a developer with a focus on HTML, I specialize in building solid foundations for web applications, ensuring a semantic and accessible structure for an effective user experience."
     },
     {
-      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968326.png",
+      "icon": "./img-icons/typescript.png",
       "title": "TYPESCRIPT",
       "text": "As an experienced TypeScript developer, I build robust applications with more secure and maintainable code, raising the quality and reliability of web development."
     }, 
     {
-      "icon": "https://w7.pngwing.com/pngs/751/989/png-transparent-bootstrap-brands-icon.png",
+      "icon": "./img-icons/bootstrap.png",
       "title": "BOOTSTRAP",
       "text": "I leverage my specialized Bootstrap skills to translate concepts into sophisticated and responsive interfaces, delivering contemporary and visually captivating web experiences."
     },
     {
-      "icon": "https://cdn.icon-icons.com/icons2/2389/PNG/512/vue_js_logo_icon_144749.png",
+      "icon": "./img-icons/vuejs.png",
       "title": "VUE.JS",
       "text": "Skilled in Vue.js, I transform ideas into dynamic and efficient web applications, offering interactive and fluid experiences for users."
     },
     {
-      "icon": "https://cdn.icon-icons.com/icons2/2148/PNG/512/tailwind_icon_131947.png",
+      "icon": "./img-icons/tailwind.png",
       "title": "TAILWIND",
       "text": "Capacity in Tailwind CSS, stylized and efficient web designs, taking advantage of the versatility of Tailwind to create attractive and functional visual experiences."
     },
     {
-      "icon": "https://cdn-icons-png.flaticon.com/256/25/25231.png",
+      "icon": "./img-icons/git.png",
       "title": "GIT AND GITHUB",
       "text": "As a professional with experience in Git and GitHub, I manage version control and collaboration on projects, ensuring workflow and source code."
     }, 
     {
-      "icon": "https://iconape.com/wp-content/png_logo_vector/cib-postman.png",
+      "icon": "./img-icons/postman.png",
       "title": "POSTMAN",
       "text": "Expert in Postman for API testing, I improve software quality by guaranteeing exhaustive validation of APIs, ensuring the reliability and efficiency of applications."
     },
     {
-      "icon": "https://cdn-icons-png.flaticon.com/512/5266/5266248.png",
+      "icon": "./img-icons/devops.png",
       "title": "DEVOPS",
       "text": "DevOps professional specializing in CI/CD, automating and optimizing development workflows for efficient software deliveries."
     },
     {
-      "icon": "https://images.vexels.com/media/users/3/195032/isolated/preview/5c8f453f712deaccf64d803b6578abd6-escuela-de-icono-plano-de-lupa.png",
+      "icon": "./img-icons/search.png",
       "title": "IN SEARCH OF GREATER LEARNING",
       "text": "In search of more knowledge."
     }
