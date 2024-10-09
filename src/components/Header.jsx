@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../img/photo.png"
+import photo from "../img/photo.jpg"
 
 export const Header = (props) => {
   return (
